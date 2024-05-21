@@ -297,6 +297,29 @@
         </div>
     </div>
 </div>
+
+<!-- Disqus 댓글 영역 -->
+<div id="disqus_thread"></div>
+
+<script>
+            /**
+             * Disqus 설정
+             */
+            var disqus_config = function () {
+                this.page.url = 'https://hiskymy.github.io/dohei-1birthday/';  // 페이지의 URL
+                this.page.identifier = '/dohei-1birthday/'; // 페이지의 고유 식별자
+            };
+
+            (function() { // Disqus 자바스크립트 코드
+                var d = document, s = d.createElement('script');
+                s.src = 'https://dohei-1birthday-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+<noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 <footer></footer>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -315,6 +338,6 @@
         <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
     </div>
 </div>
-
+<script id="dsq-count-scr" src="//dohei-1birthday-1.disqus.com/count.js" async></script>
 </body>
 </html>
